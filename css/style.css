@@ -1,0 +1,647 @@
+.clear{
+    clear: both;
+}
+
+body, html {    
+    background-color: #fff;
+    margin: 0;    
+    padding: 0;    
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'actolight';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-light-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-light-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actobook';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-book-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-book-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actomedium';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-medium-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-medium-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actosemibold';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-semibold-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-semibold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actobold';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-bold-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actobold_italic';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-bold_italic-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-bold_italic-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actoextrabold';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-extrabold-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-extrabold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actoextrabold_italic';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-extrabold_italic-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-extrabold_italic-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actoblack';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-black-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-black-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actoultrablack';
+    src: url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-ultrablack-webfont.woff2') format('woff2'),
+         url('https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/puerto-de-chancay/fonts/acto-ultrablack-webfont.woff') format('woff');
+}
+
+#header{
+    margin-bottom: 50px;
+    width: 100%;
+}
+    .header-comercio{   
+        background: #000;    
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 9999999;
+    }
+        .ctn-header-comercio{
+            margin: 0 auto;     
+            max-width: 1024px;
+            padding: 0 5px;
+            text-align: right;
+        }
+            .ctn-header-comercio a{
+                display: inline-block;                
+                text-indent: -9999px;
+            }
+                a.logo-comercio{
+                    background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/somos-35-anos-mejores-portadas-ecpm/img/logo-comercio.png?v2) no-repeat 0 0;
+                    background-size: 100%;
+                    display: none;
+                    height: 30px;
+                    margin-top: 10px;
+                    width: 110px;
+                }
+                #social{
+                        float: right;
+                        margin: 20px;
+                        position: absolute;
+                        right: 0;
+                        z-index: 600;
+                }
+                #social ul{
+                    display: inline-block;
+                    margin: 0 auto;
+                    padding: 0;
+                    vertical-align: middle;
+                }
+                    #social ul li{
+                        display: inline-block;
+                        margin: 0 3px;
+                        vertical-align: middle;
+                    }
+                        #social ul li a{
+                            height: 36px;
+                            width: 36px;
+                        }
+                        #fb{
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/fb-icon.png?v2) no-repeat 0 0;
+                            background-size: 100% !important;
+                            border: none;
+                            display: inline-block;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }
+                        #wst{                
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/wsp-icon.png?v2) no-repeat 0 0 !important;
+                            background-size: 100% !important;
+                            border: none;
+                            display: none;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        }
+                        #tw{            
+                            background: url(https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales-multimedia/personas-desaparecidas/img/tw-icon.png?v2) no-repeat 0 0 !important;
+                            background-size: 100% !important;
+                            border: none;
+                            display: inline-block;
+                            height: 36px;
+                            text-indent: -9999px;
+                            width: 36px;
+                        } 
+
+#box-portada{
+    background: url('../img/bg-portada.jpg') no-repeat center top;
+    background-size: cover;
+    height: 80vh;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    position: relative;
+}
+    .bg-portada,
+    .logo-comercio{
+        display: block;
+        margin: 30px auto;
+        max-width: 900px;
+    }
+    .logo-comercio{
+        margin: 0 auto;
+        max-width: 300px;
+    }
+        .ctn-titulo-portada{
+            bottom: 30px;
+            position: absolute;
+            width: 100%;
+        }
+            #box-portada h1{
+                color: #fff;
+                font: 2.5rem/1.1 'actoblack';
+                margin: 30px auto;
+                max-width: 750px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            #box-portada h2{
+                font: 1.2rem/1.3 'actobook';
+                margin: 30px auto;
+                max-width: 500px;
+                text-align: center;
+            }
+                #box-portada h2 span,
+                .box-bajada h4 span{
+                    font-family: 'actobold';
+                }
+            img.flecha-bajar{
+                cursor: pointer;
+                display: block;
+                margin: 10px auto;
+                max-width: 50px;
+            }
+.box-bajada{
+    background-color: #D4424F;
+    padding: 50px 0;
+}
+    .box-bajada span.separador,
+    .box-perfil span.separador,
+    .box-infodraws span.separador,
+    .box-interes span.separador,
+    #main-buscador span.separador,
+    .main-segmentos span.separador,
+    .main-grafico span.separador{
+        background-color: #000;
+        display: block;
+        height: 1px;
+        margin: 10px auto;
+        max-width: 200px;
+    }
+    .box-bajada span.separador{
+        background-color: #fff !important;
+    }
+    .box-bajada h4{
+        color: #fff;
+        font: 1.3rem/1.6 'actobook';
+        margin: 50px auto;
+        max-width: 500px;
+        text-align: center;
+    }
+.box-perfil{
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+    .box-perfil p,
+    .box-interes p{
+        font: 1rem/1.5 'actobook';
+        margin: 50px auto;
+        max-width: 490px;
+        text-align: left;
+    }
+    img.joven-1,
+    img.joven-2{
+        display: inline-block;
+        max-width: 210px;
+        vertical-align: top;
+    }
+    img.joven-1{
+        margin-left: -95px;
+        max-width: 300px;
+    }
+    .ctn-box-datos{
+        display: inline-block;
+        margin: 0 20px;
+        vertical-align: top;
+    }
+        .box-dato{
+            background-color: #eaeaea;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            width: 200px;
+        }
+            .box-dato img{
+                max-width: 90%;
+            }
+.box-interes{
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+.box-grafico{
+    margin: 0 20px 80px;
+}
+    .box-grafico h4{
+        font: 1.1rem/1.5 'actobook';
+        margin: 20px auto;
+        max-width: 450px;
+        text-align: center;
+    }
+        .box-grafico h4 span{
+            color: #D4424F;
+            font-family: 'actobold';
+        }
+        .box-iframe{
+            margin: 20px auto;
+            max-width: 650px;
+        }
+.box-infodraws{
+    margin-bottom: 80px;
+}
+    .box-scroll {
+        display: flex;
+        gap: 16px;
+        justify-content: start;
+        margin: 40px auto 0;
+        max-width: 1250px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+        .box-scroll img {
+            flex: 0 0 auto;            
+            margin: 0 10px;
+            max-width: 400px;
+            scroll-snap-align: start;
+            width: 100%;
+        }   
+
+    .box-scroll::-webkit-scrollbar {
+        /*display: none;*/
+    }
+
+#main-buscador{
+    padding: 50px 0;
+}
+    .box-perfil h3,
+    .box-interes h3,
+    .box-infodraws h3,
+    #main-buscador h3,
+    .main-segmentos h3,
+    .main-grafico h3{
+        font: 1.55rem/1.3 'actoextrabold';
+        margin: 30px auto 15px;
+        max-width: 500px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .box-perfil h3{
+        text-transform: uppercase;
+    }
+    span.base{
+        color: #989898;
+        display: block;
+        font: 1rem/1.2 'actomedium';
+        margin: 0 auto;
+        text-align: center;
+    }
+    .search-container {        
+        margin: 30px auto;
+        max-width: 400px;        
+        position: relative;
+    }  
+        .search-container input {
+            border: 1px solid #989898;
+            border-radius: 25px;
+            box-sizing: border-box;
+            font-size: 16px;
+            padding: 12px 40px 12px 15px;
+            width: 100%;            
+        }  
+        .search-container .icon {
+            background: url('../img/lupa.png') no-repeat center center;
+            background-size: 100%;
+            height: 40px;
+            pointer-events: none;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            
+        }  
+    .candidates {
+        display: block;
+        margin: 0 auto;
+        max-width: 1400px;
+        text-align: center;
+    }  
+        .candidate {
+            background: white;
+            border: 3px solid #F0F0E1;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 20px 30px;
+            max-width: 400px;
+            opacity: 1;
+            padding: 20px 30px;            
+            transform: scale(1);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            vertical-align: top;
+            width: 400px;
+        }  
+        .candidate.hidden {
+            opacity: 0;
+            transform: scale(0.95);
+            pointer-events: none;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            width: 0;
+        }
+            .box-head-candidate{
+                text-align: left;
+            }
+                .box-head-candidate img{
+                    display: inline-block;
+                    max-width: 100px;
+                    vertical-align: top;
+                }
+                .box-nombre-candidate{
+                    display: inline-block;
+                    margin: 0 5px;
+                    padding-top: 10px;
+                    text-align: left;
+                    vertical-align: top;
+                }
+                    .box-nombre-candidate h5{
+                        font: 1.3rem/1.2 'actoextrabold';
+                        margin: 0 auto;
+                    }
+                    .box-nombre-candidate p{
+                        color: #989898;
+                        font: .9rem/1.1 'actomedium';
+                        margin: 5px auto;
+                    }
+            .box-datos-candidate{
+                text-align: left;
+            }
+                .section-title {
+                    font: 1rem/1.2 'actobold';
+                    margin-top: 20px;
+                    margin-bottom: 5px;
+                    text-align: left;
+                }                  
+                .horizontal {
+                    display: inline-block;
+                    font: 1rem/1.2 'actobold';
+                    margin-bottom: 3px;
+                    text-align: left;
+                    vertical-align: top;                    
+                }   
+                    .horizontal span{
+                        color: #989898;
+                    }  
+                    .margin{
+                        margin: 0 10px;
+                    }  
+                .bar-container {
+                    height: 20px;
+                    margin: 5px 0 20px;
+                    width: 100%;
+                }       
+                    .bar-container p{
+                        display: inline-block;
+                        font: 1rem/1.2 'actobold';
+                        margin: 0 auto;
+                        vertical-align: top;
+                        width: 10%;
+                    }  
+                        .box-bar{
+                            display: inline-block;                           
+                            vertical-align: top;
+                            width: 88%;
+                        }         
+                            .bar {
+                                height: 20px;
+                                background-color: #b38e33;                                
+                            }
+                                .ancho-13{
+                                    width: 13%;
+                                }
+                                .ancho-16{
+                                    width: 16%;
+                                }
+                                .ancho-17{
+                                    width: 17%;
+                                }
+                                .ancho-18{
+                                    width: 18%;
+                                }
+                                .ancho-19{
+                                    width: 19%;
+                                }
+                                .ancho-23{
+                                    width: 23%;
+                                }
+                                .ancho-28{
+                                    width: 28%;
+                                }
+                                .ancho-40{
+                                    width: 40%;
+                                }
+                                .ancho-43{
+                                    width: 43%;
+                                }
+                                .ancho-44{
+                                    width: 44%;
+                                }
+                                .ancho-48{
+                                    width: 48%;
+                                }
+                                .ancho-51{
+                                    width: 51%;
+                                }
+                                .ancho-57{
+                                    width: 57%;
+                                }
+                                .ancho-66{
+                                    width: 66%;
+                                }
+                                .ancho-70{
+                                    width: 70%;
+                                } 
+                                .ancho-82{
+                                    width: 82%;
+                                }   
+                                .ancho-91{
+                                    width: 91%;
+                                }                  
+                .opinion-subtext {
+                    font:  .9rem/1.2 'actomedium';
+                    color: #666;
+                    margin-bottom: 5px;
+                }                  
+                    .azul {
+                        color: #2196F3; 
+                    }                  
+                    .rojo {
+                        color: #E53935; 
+                    }                  
+                    .negro {
+                        color: #333;
+                    }                  
+                hr {
+                    border: none;
+                    border-top: 1px solid #ccc;
+                    margin: 10px 0;
+                }
+.main-segmentos{
+    padding-bottom: 60px;
+}
+    .main-segmentos h3{
+        max-width: 90%;
+    }
+    .table-responsive {
+        margin: 40px auto;
+        max-width: 600px;
+        overflow-x: auto;
+    }  
+        table {            
+            min-width: 600px;
+            width: 100%;           
+        }  
+        th, 
+        td {
+            padding: 8px 12px;
+            text-align: center;
+        }  
+        th {
+            background-color: #000;
+            color: white;
+            font-weight: bold;
+        }  
+        thead th[colspan] {
+            background-color: #000;
+            font: 1rem/1.2 'actobold';
+        }  
+        tbody tr:nth-child(even) {
+            background-color: transparent;
+        }  
+        td.label {
+            background-color: transparent;
+            font: .9rem/1.2 'actomedium';
+            text-align: left;            
+        }
+        .italic{
+            font: .9rem/1.1 'actomedium';
+            font-style: italic;
+        }  
+        .bg-blue {
+            background-color: #dcecfb;
+            font: .9rem/1.1 'actosemibold';
+        }  
+        .bg-beige {
+            background-color: #f0e5d3;
+            font: .9rem/1.1 'actosemibold';
+        }
+.main-grafico{
+
+}
+    
+.box-footer{
+    border: 3px solid #F0F0E1;
+    box-sizing: border-box;
+    margin: 40px auto;
+    max-width: 675px;
+    padding: 20px 30px;
+}
+    .box-footer p{
+        font: .9rem/1.5 'actobook';
+        margin: 0 auto;
+    }
+        .box-footer p span{
+            font-family: 'actobold';
+        }
+ul.creditos{
+    margin: 50px auto 0;
+    padding: 0;
+    text-align: center;
+}
+    ul.creditos li{
+
+    }
+        ul.creditos li p{
+            font: .9rem/1.5 'actobook';
+            margin: 0 auto 10px;
+        }
+            ul.creditos li p span{
+                display: block;
+                font-family: 'actobold';
+            }
+
+  
+@media (max-width: 768px) {
+
+    #wst{
+        display: inline-block;
+    }
+    .header-comercio{
+        position: absolute;
+        top: 0;
+    }
+    #box-portada h1{
+        font: 1.7rem/1.3 'actoblack';
+    }
+    .box-perfil p,
+    .box-interes p{
+        padding: 0 20px;
+    }
+    img.joven-1,
+    img.joven-2{
+        display: none;
+    }
+    #box-portada h2,
+    #main-buscador h3{
+        padding: 0 20px;
+    }
+    .search-container{
+        max-width: 90%;
+    }
+    .candidate{
+        max-width: 90%;
+    }
+    .box-bar{
+        width: 80%;
+    }
+    .box-bajada{
+        padding: 50px 30px;
+    }
+    table {
+        font-size: 13px;
+    }
+    .box-footer{
+        margin: 40px;
+    }
+
+}
