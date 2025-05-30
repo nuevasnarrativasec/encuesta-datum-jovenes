@@ -263,7 +263,7 @@ body, html {
     .box-grafico h4{
         font: 1.1rem/1.5 'actobook';
         margin: 20px auto;
-        max-width: 450px;
+        max-width: 470px;
         text-align: center;
     }
         .box-grafico h4 span{
@@ -290,7 +290,7 @@ body, html {
         .box-scroll img {
             flex: 0 0 auto;            
             margin: 0 10px;
-            max-width: 400px;
+            max-width: 450px;
             scroll-snap-align: start;
             width: 100%;
         }   
@@ -574,7 +574,7 @@ body, html {
     box-sizing: border-box;
     margin: 40px auto;
     max-width: 675px;
-    padding: 20px 30px;
+    padding: 40px 30px;
 }
     .box-footer p{
         font: .9rem/1.5 'actobook';
