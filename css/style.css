@@ -278,6 +278,11 @@ body, html {
 .box-infodraws{
     margin-bottom: 80px;
 }
+    img.icon-desliza{
+        display: block;
+        margin: 10px auto;
+        max-width: 190px;
+    }
     .box-scroll {
         display: flex;
         gap: 16px;
@@ -296,9 +301,26 @@ body, html {
             width: 100%;
         }   
 
-    .box-scroll::-webkit-scrollbar {
-        /*display: none;*/
-    }
+    .scroll-indicators {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        }
+
+        .scroll-indicators .bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        }
+
+        .scroll-indicators .bullet.active {
+        background-color: #333;
+        }
+
 
 #main-buscador{
     padding: 50px 0;

@@ -173,7 +173,10 @@
         <h3>
             infodraws informativos
         </h3>
-        <div class="box-scroll">
+
+        <img src="./img/icon-desliza.jpg" alt="" width="100%" class="icon-desliza">
+        <div class="scroll-indicators" id="indicators"></div>
+        <div class="box-scroll" id="scrollBox">
             <img src="./img/1.jpg" alt="" width="100%">
             <img src="./img/2.jpg" alt="" width="100%">
             <img src="./img/3.jpg" alt="" width="100%">
@@ -251,7 +254,54 @@
             'slow');
         });
     </script>
-   
+
+    <!-- scroll -->
+    <script>
+        const scrollBox = document.getElementById("scrollBox");
+        const images = scrollBox.querySelectorAll("img");
+        const indicators = document.getElementById("indicators");
+
+        const bullets = [];
+
+        images.forEach((img, index) => {
+            const bullet = document.createElement("div");
+            bullet.classList.add("bullet");
+            if (index === 0) bullet.classList.add("active");
+
+            bullet.addEventListener("click", () => {
+            // Centrado: desplazamos la imagen restando la mitad del sobrante
+            const scrollLeft = img.offsetLeft - (scrollBox.clientWidth - img.clientWidth) / 2;
+            scrollBox.scrollTo({
+                left: scrollLeft,
+                behavior: "smooth"
+            });
+            });
+
+            indicators.appendChild(bullet);
+            bullets.push(bullet);
+        });
+
+        scrollBox.addEventListener("scroll", () => {
+            let currentIndex = 0;
+            let minDistance = Infinity;
+
+            images.forEach((img, index) => {
+            // Centro de la imagen respecto al scroll
+            const imgCenter = img.offsetLeft + img.clientWidth / 2;
+            const scrollCenter = scrollBox.scrollLeft + scrollBox.clientWidth / 2;
+            const distance = Math.abs(scrollCenter - imgCenter);
+
+            if (distance < minDistance) {
+                minDistance = distance;
+                currentIndex = index;
+            }
+            });
+
+            bullets.forEach((b, i) => b.classList.toggle("active", i === currentIndex));
+        });
+    </script>
+
+
 
 </body>
 </html>
