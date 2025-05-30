@@ -228,6 +228,9 @@ body, html {
         max-width: 490px;
         text-align: left;
     }
+        .box-perfil p span{
+            font-family: 'actobold';
+        }
     img.joven-1,
     img.joven-2{
         display: inline-block;
@@ -264,7 +267,7 @@ body, html {
     .box-grafico h4{
         font: 1.1rem/1.5 'actobook';
         margin: 40px auto 20px;
-        max-width: 470px;
+        max-width: 475px;
         text-align: center;
     }
         .box-grafico h4 span{
@@ -282,6 +285,11 @@ body, html {
         display: block;
         margin: 10px auto;
         max-width: 190px;
+    }
+    img.icon-presiona{
+        display: block;
+        margin: 10px auto;
+        max-width: 260px;
     }
     .box-scroll {
         display: flex;
