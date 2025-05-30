@@ -197,6 +197,7 @@ body, html {
     .box-perfil span.separador,
     .box-infodraws span.separador,
     .box-interes span.separador,
+    .box-grafico span.separador,
     #main-buscador span.separador,
     .main-segmentos span.separador,
     .main-grafico span.separador{
@@ -262,7 +263,7 @@ body, html {
 }
     .box-grafico h4{
         font: 1.1rem/1.5 'actobook';
-        margin: 20px auto;
+        margin: 40px auto 20px;
         max-width: 470px;
         text-align: center;
     }
@@ -305,6 +306,7 @@ body, html {
     .box-perfil h3,
     .box-interes h3,
     .box-infodraws h3,
+    .box-grafico h3,
     #main-buscador h3,
     .main-segmentos h3,
     .main-grafico h3{
